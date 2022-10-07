@@ -75,7 +75,7 @@ ifdef TARGET_SUPPORTS_MOTO_MODS
     DEVICE_MANIFEST_FILE += $(PLATFORM_PATH)/motomods_manifest.xml
 endif
 DEVICE_MATRIX_FILE := device/qcom/common/compatibility_matrix.xml
-DEVICE_FRAMEWORK_MANIFEST_FILE := $(PLATFORM_PATH)/framework_manifest.xml
+
 TARGET_FS_CONFIG_GEN += \
     $(PLATFORM_PATH)/config.fs \
     $(PLATFORM_PATH)/mot_aids.fs
