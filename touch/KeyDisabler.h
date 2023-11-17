@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-#ifndef VENDOR_LINEAGE_TOUCH_V1_0_KEYDISABLER_H
-#define VENDOR_LINEAGE_TOUCH_V1_0_KEYDISABLER_H
+#ifndef VENDOR_EVERVOLV_TOUCH_V1_0_KEYDISABLER_H
+#define VENDOR_EVERVOLV_TOUCH_V1_0_KEYDISABLER_H
 
 #include <com/fingerprints/extension/1.0/IFingerprintNavigation.h>
-#include <vendor/lineage/touch/1.0/IKeyDisabler.h>
+#include <vendor/evervolv/touch/1.0/IKeyDisabler.h>
 
 namespace vendor {
-namespace lineage {
+namespace evervolv {
 namespace touch {
 namespace V1_0 {
 namespace implementation {
@@ -34,7 +34,7 @@ class KeyDisabler : public IKeyDisabler {
   public:
     KeyDisabler();
 
-    // Methods from ::vendor::lineage::touch::V1_0::IKeyDisabler follow.
+    // Methods from ::vendor::evervolv::touch::V1_0::IKeyDisabler follow.
     Return<bool> isEnabled() override;
     Return<bool> setEnabled(bool enabled) override;
 
@@ -46,7 +46,7 @@ class KeyDisabler : public IKeyDisabler {
 }  // namespace implementation
 }  // namespace V1_0
 }  // namespace touch
-}  // namespace lineage
+}  // namespace evervolv
 }  // namespace vendor
 
-#endif  // VENDOR_LINEAGE_TOUCH_V1_0_KEYDISABLER_H
+#endif  // VENDOR_EVERVOLV_TOUCH_V1_0_KEYDISABLER_H

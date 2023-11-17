@@ -13,9 +13,9 @@
 // limitations under the License.
 
 cc_binary {
-    name: "vendor.lineage.touch@1.0-service.msm8998",
-    init_rc: ["vendor.lineage.touch@1.0-service.msm8998.rc"],
-    vintf_fragments: ["vendor.lineage.touch@1.0-service.msm8998.xml"],
+    name: "vendor.evervolv.touch@1.0-service.msm8998",
+    init_rc: ["vendor.evervolv.touch@1.0-service.msm8998.rc"],
+    vintf_fragments: ["vendor.evervolv.touch@1.0-service.msm8998.xml"],
     defaults: ["hidl_defaults"],
     relative_install_path: "hw",
     vendor: true,
@@ -28,6 +28,6 @@ cc_binary {
         "libhidlbase",
         "libutils",
         "com.fingerprints.extension@1.0",
-        "vendor.lineage.touch@1.0",
+        "vendor.evervolv.touch@1.0",
     ],
 }
