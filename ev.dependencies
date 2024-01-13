@@ -13,7 +13,7 @@
   },
   {
     "repository": "proprietary_vendor_motorola_msm8998-common",
-    "target_path": "vendor/motorola/msm8998-common"
+    "target_path": "vendor/motorola/msm8998-common",
     "remote": "evervolv-gitlab"
   }
 ]
