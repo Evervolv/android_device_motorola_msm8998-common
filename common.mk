@@ -164,6 +164,7 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
+    fstab.qcom \
     init.class_main.sh \
     init.mmi.usb.sh \
     init.qcom.sh \
