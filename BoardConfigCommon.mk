@@ -61,9 +61,9 @@ LOC_HIDL_VERSION := 3.0
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(PLATFORM_PATH)/framework_compatibility_matrix.xml \
-    hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
-    hardware/qcom-caf/common/vendor_framework_compatibility_matrix_legacy.xml \
-    vendor/lineage/config/device_framework_matrix.xml
+    device/qcom/common/vendor_framework_compatibility_matrix.xml \
+    device/qcom/common/vendor_framework_compatibility_matrix_legacy.xml \
+    hardware/lineage/interfaces/compatibility_matrices/compatibility_matrix.lineage.xml
 
 DEVICE_MANIFEST_FILE := $(PLATFORM_PATH)/manifest.xml
 ifdef BOARD_USES_KEYMASTER_4
@@ -74,7 +74,7 @@ endif
 ifdef TARGET_SUPPORTS_MOTO_MODS
     DEVICE_MANIFEST_FILE += $(PLATFORM_PATH)/motomods_manifest.xml
 endif
-DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
+DEVICE_MATRIX_FILE := device/qcom/common/compatibility_matrix.xml
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(PLATFORM_PATH)/framework_manifest.xml
 TARGET_FS_CONFIG_GEN += \
     $(PLATFORM_PATH)/config.fs \

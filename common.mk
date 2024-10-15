@@ -23,7 +23,7 @@
 #
 
 # Add common definitions for Qualcomm
-$(call inherit-product, hardware/qcom-caf/common/common.mk)
+$(call inherit-product, device/qcom/common/common.mk)
 
 $(call inherit-product, vendor/motorola/msm8998-common/msm8998-common-vendor.mk)
 
@@ -32,7 +32,7 @@ PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := true
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-ev
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 

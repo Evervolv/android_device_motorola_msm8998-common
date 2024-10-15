@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "vendor.lineage.touch@1.0-service.msm8998"
+#define LOG_TAG "vendor.evervolv.touch@1.0-service.msm8998"
 
 #include <android-base/logging.h>
 #include <hidl/HidlTransportSupport.h>
@@ -27,8 +27,8 @@ using android::status_t;
 using android::hardware::configureRpcThreadpool;
 using android::hardware::joinRpcThreadpool;
 
-using ::vendor::lineage::touch::V1_0::IKeyDisabler;
-using ::vendor::lineage::touch::V1_0::implementation::KeyDisabler;
+using ::vendor::evervolv::touch::V1_0::IKeyDisabler;
+using ::vendor::evervolv::touch::V1_0::implementation::KeyDisabler;
 
 int main() {
     sp<KeyDisabler> keyDisabler;

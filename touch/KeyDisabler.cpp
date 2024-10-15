@@ -21,7 +21,7 @@
 #include "KeyDisabler.h"
 
 namespace vendor {
-namespace lineage {
+namespace evervolv {
 namespace touch {
 namespace V1_0 {
 namespace implementation {
@@ -34,7 +34,7 @@ KeyDisabler::KeyDisabler() {
         mHasKeyDisabler = true;
 }
 
-// Methods from ::vendor::lineage::touch::V1_0::IKeyDisabler follow.
+// Methods from ::vendor::evervolv::touch::V1_0::IKeyDisabler follow.
 Return<bool> KeyDisabler::isEnabled() {
     if (!mHasKeyDisabler) return false;
 
@@ -51,5 +51,5 @@ Return<bool> KeyDisabler::setEnabled(bool enabled) {
 }  // namespace implementation
 }  // namespace V1_0
 }  // namespace touch
-}  // namespace lineage
+}  // namespace evervolv
 }  // namespace vendor
